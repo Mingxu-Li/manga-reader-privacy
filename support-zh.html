@@ -1,11 +1,120 @@
-<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>漫画阅读器 – 技术支持</title>
-<style>body{font-family:-apple-system,'PingFang SC',sans-serif;max-width:760px;margin:40px auto;padding:0 20px;color:#1d1d1f;line-height:1.7}h1{font-size:26px}section{margin:18px 0}footer{color:#86868b;font-size:13px;margin-top:30px}a{color:#0066cc}</style></head>
-<body><h1>漫画阅读器 – 技术支持</h1>
-<section><h2>联系我们</h2><p>如有问题或建议，请发送邮件至：<a href="mailto:dreamli81@foxmail.com">dreamli81@foxmail.com</a>（请附上 macOS 版本与问题描述）。</p></section>
-<section><h2>常见问题</h2>
-<p><b>支持打开哪些格式？</b> 图片文件夹、zip/cbz、rar/cbr、lzh/cbl 等无密码压缩包，以及 PDF 逐页阅读。</p>
-<p><b>如何连续阅读同一个文件夹里的文件？</b> 打开文件夹即可按文件名顺序阅读；打开单个文件时，首次会请求授权所在文件夹（系统提示），授权后可自动连读，之后无需重复授权。</p>
-<p><b>如何缩放/打印？</b> 触控板双指缩放，或使用缩放菜单；⌘P 打印当前页。</p>
-<p><b>会联网上传我的数据吗？</b> 不会。应用在本地运行，不联网、不收集数据。详见<a href="https://mingxu-li.github.io/manga-reader-privacy/index-zh.html">隐私政策</a>。</p>
-</section>
-<footer>© 2026 李明旭</footer></body></html>
+<!DOCTYPE html>
+<html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>漫画阅读器 – 技术支持与使用说明</title>
+<style>
+body{font-family:-apple-system,'PingFang SC',sans-serif;max-width:820px;margin:40px auto;padding:0 20px;color:#1d1d1f;line-height:1.75;font-size:15px}
+h1{font-size:26px;margin-bottom:4px}h2{font-size:20px;margin:34px 0 10px;padding-bottom:6px;border-bottom:1px solid #e5e5ea}h3{font-size:16px;margin:22px 0 6px}
+p{margin:8px 0}ul,ol{margin:8px 0;padding-left:22px}li{margin:4px 0}
+code{font-family:'SF Mono',Menlo,monospace;font-size:13px;background:#f5f5f7;border-radius:4px;padding:1px 5px}
+footer{color:#86868b;font-size:13px;margin-top:44px;border-top:1px solid #e5e5ea;padding-top:12px}a{color:#0066cc;text-decoration:none}
+.sub{color:#86868b;font-size:13px;margin-top:0}.email{font-size:17px}
+</style></head>
+<body>
+<h1>漫画阅读器 – 技术支持与使用说明</h1>
+<p class="sub">最后更新：2026-09-09 · 另见 <a href="index-zh.html">隐私政策</a> · <a href="support-en.html">English Support</a></p>
+
+<h2>一、应用简介（README）</h2>
+<p><b>漫画阅读器</b>是一款为 macOS 打造的轻量、流畅的漫画阅读器，让您专注于阅读本身。它在本机本地运行，不联网、不收集任何数据。</p>
+<ul>
+<li><b>支持格式</b>：图片文件夹、zip / cbz / rar / cbr / lzh / cbl 书库，以及 PDF 逐页阅读；也可直接打开单个图片 / PDF 文件。</li>
+<li><b>阅读模式</b>：日式、中式、瀑布三种漫画阅读模式，配合回车 / 点击连贯翻页，翻页后自动对齐画面。</li>
+<li><b>智能续读</b>：同一文件夹中的图片与 PDF 按文件名顺序自动接续阅读（首次使用需授权文件夹，见下文「文件夹授权」）。</li>
+<li><b>灵活的缩放</b>：适应窗口、按宽、按高、原尺寸与指定比例；触控板捏合或阅读区滚轮缩放 / 滚动，方向可在设置中调整。</li>
+<li><b>自动播放与循环</b>：按设定间隔自动翻页，可循环播放。</li>
+<li><b>实用工具</b>：一键打印当前页（⌘P）、灰阶 / 反色 / 裁剪 / USM 锐化滤镜、最近打开、对图片文件夹的查找与批量改名。</li>
+<li><b>多语言</b>：15 种界面语言（简体中文 / English / 日本語 / 繁體中文 / 한국어 / Français / Deutsch / Español / Italiano / Português / Русский / Nederlands / Polski / Türkçe / Tiếng Việt），可跟随系统自动切换。</li>
+<li><b>隐私友好</b>：所有阅读数据仅保存在您的 Mac 上；正式版不发起任何网络连接。详见<a href="index-zh.html">隐私政策</a>。</li>
+</ul>
+<p><b>系统要求</b>：macOS 13.0 或更高（支持 Apple 芯片与 Intel）。</p>
+
+<h2>二、快速开始</h2>
+<h3>1. 安装与启动</h3>
+<p>在 Mac App Store 中搜索「漫画阅读器」下载安装（正式版不含试用期限制）。启动后界面语言自动跟随系统，也可在环境设置中手动选择。</p>
+<h3>2. 打开内容</h3>
+<ul>
+<li>按 <code>⌘O</code>（文件 → 打开书库/文件夹…）选择图片文件夹、压缩包书库或单个文件；</li>
+<li>也可以把文件或文件夹直接拖入窗口。</li>
+</ul>
+<h3>3. 文件夹授权（重要）</h3>
+<p>在 App Store 沙盒模式下，应用只能读取您主动打开的内容。分两种情况：</p>
+<ul>
+<li><b>直接打开整个文件夹</b>：打开面板已授予该文件夹访问权，按文件名顺序阅读，无需额外操作；</li>
+<li><b>打开单个图片 / PDF</b>：若该文件所在目录还有后续文件，应用会提示「是否连读同目录文件？」——选择<b>「选择文件夹连读…」</b>并在系统面板中授权该文件夹后，将自动接续阅读同目录后续文件，此授权会被记住，之后无需重复授权；选择「仅当前文件」则只打开这一个文件。</li>
+</ul>
+<p>已授予的文件夹可随时在<b>系统设置 → 隐私与安全性 → 文件与文件夹</b>中查看或撤销。</p>
+
+<h2>三、详细操作说明</h2>
+<h3>1. 支持的格式与限制</h3>
+<p>支持：图片文件夹；位图图片（JPEG、PNG、GIF、BMP、TIFF、JPEG 2000、WebP、HEIC 等）；zip / cbz、rar / cbr、lzh / cbl 压缩包；PDF（按页阅读）。</p>
+<p><b>限制</b>：加密 RAR、加密 ZIP 条目暂不支持。</p>
+
+<h3>2. 翻页与浏览</h3>
+<ul>
+<li><b>键盘</b>：<code>← →</code>、<code>PgUp PgDn</code>、<code>Home End</code>、<code>空格</code> 翻页；<code>回车</code> 的行为可在设置中选择（跟随键位档 / 下一页 / 阅读模式下按模式步进）；翻到首页或末页即停，不循环。</li>
+<li><b>鼠标（画布上）</b>：左键 = 下一页；右键 = 上一页。阅读模式开启时，左键 = 按模式步进（与回车一致）。</li>
+<li><b>滚轮</b>：瀑布模式下 = 图像上下滚动（触控板平滑，滚轮每格约 8% 视口高度，滚到底后再按一次回车 / 点击即翻页）；其余模式下 = 图片全局缩放（每格约 1.12 倍）。滚轮方向可在设置中选择「跟随系统 / 与系统方向相反」。</li>
+</ul>
+
+<h3>3. 漫画阅读模式（窗口内「阅读模式」下拉，或 视图 → 阅读模式 子菜单）</h3>
+<ul>
+<li><b>日式</b>：先右后左——宽图先看右半幅、再看左半幅，然后翻页；</li>
+<li><b>中式</b>：先左后右——宽图先看左半幅、再看右半幅，然后翻页；</li>
+<li><b>瀑布</b>：每步向下滚动约 95% 视口高度，到底后再次回车 / 点击翻页；</li>
+<li>竖版长页（仅高度超出窗口）在日式 / 中式下按屏滚动，节奏与瀑布相同；宽、高都超出时逐角对齐；</li>
+<li><b>整幅完全可见</b>时，回车 / 点击直接翻到下一页；</li>
+<li><b>翻页起点</b>：整幅可见 = 居中；任一侧超出窗口时，瀑布 / 中式 / 无模式从顶部开始，日式从右上角开始（与手动缩放倍率无关）。</li>
+</ul>
+
+<h3>4. 缩放</h3>
+<ul>
+<li>按钮行：适应窗口 / 适应高度 / 适应宽度 / 原寸（快捷键 <code>4</code> = 适应宽度）；</li>
+<li>缩放下拉：按宽 / 按高 / 原尺寸 / 指定比例。前三档为纯档位；「指定比例」= 原尺寸倍数（100 = 1:1，150 = 1.5 倍），仅该档出现百分比输入框，输入后按回车或移开焦点生效；超过 200% 会弹提示（仍会应用，可调回更小数值）；</li>
+<li>触控板<b>双指捏合</b>也可缩放。</li>
+</ul>
+
+<h3>5. 自动播放</h3>
+<p>视图 → <b>播放 / 暂停</b> 开始或暂停自动翻页；<b>停止播放</b> 结束；<b>循环模式</b> 可控制是否循环。自动翻页的间隔在 文件 → 环境设置… 的「翻页间隔（毫秒）」中调整。</p>
+
+<h3>6. 滤镜</h3>
+<p>窗口内「滤镜」下拉可选：无 / 灰阶 / 反色 / 裁剪 5% / USM 锐化。按 <code>F</code> 可在「无」与上一次选择的滤镜之间快速切换。</p>
+
+<h3>7. 打印</h3>
+<p><code>⌘P</code>（文件 → 打印…）经系统打印面板打印<b>当前页</b>。</p>
+
+<h3>8. 查找与批量改名</h3>
+<p>编辑 → <b>重命名…</b> 打开「查找与批量改名」：在<b>文件夹书</b>中按文件名主干进行正则查找 / 替换（扩展名保留），可预览匹配数量后「全部替换」；改名仅对文件夹页源生效，压缩包书库不适用。若替换结果为空或含非法字符，相关条目会被跳过。</p>
+
+<h3>9. 环境设置（⌘,）</h3>
+<ul>
+<li><b>界面语言</b>：跟随系统，或手动选择上述 15 种语言之一（即时切换；跟随系统时若系统语言不在列表中，默认使用英语）；</li>
+<li><b>阅读性能</b>：展开缓存（张）、前进预读（张）、回收上限（MB）；</li>
+<li><b>翻页间隔（毫秒）</b>：自动播放的翻页间隔；</li>
+<li><b>回车键行为</b>：跟随键位档（默认）/ 下一页 / 启动阅读模式时按模式步进；</li>
+<li><b>PDF 渲染质量</b>：1.0×（72dpi）/ 1.5×（108dpi）/ 2.0×（144dpi，默认）/ 3.0×（216dpi）——<b>对已打开的文档不生效</b>，调整后需重新打开该 PDF；</li>
+<li><b>滚轮方向</b>：跟随系统方向（默认）/ 与系统方向相反。</li>
+</ul>
+
+<h3>10. 其它功能</h3>
+<ul>
+<li><b>最近打开</b>：文件 → 打开最近…（最多 5 条）；</li>
+<li><b>关闭书</b>：<code>⌘W</code> 或 文件 → 关闭书；</li>
+<li><b>全屏</b>：视图 → 全屏切换，或使用窗口绿色按钮；</li>
+<li><b>菜单栏图标</b>：视图 → 状态栏图标 可开关菜单栏常驻图标；</li>
+<li><b>帮助</b>：帮助菜单含「版权信息」「开源许可」（应用内可查看所用开源组件及许可全文）；应用菜单含「关于」。</li>
+</ul>
+
+<h2>四、常见问题（FAQ）</h2>
+<p><b>问：能打开哪些格式？</b><br>图片文件夹、图片文件与 PDF 文件、zip / cbz、rar / cbr、lzh / cbl（均需无密码）。</p>
+<p><b>问：如何连续阅读同一个文件夹里的文件？</b><br>直接打开文件夹即可按文件名顺序阅读；打开单个文件时首次会提示授权所在文件夹（见上文「文件夹授权」），授权后自动连读且无需重复授权。PDF 会先翻完自身各页，再接续下一个文件。</p>
+<p><b>问：如何缩放？</b><br>用底部按钮或缩放下拉，触控板双指捏合，或阅读区滚轮（方向可在设置中调整）。</p>
+<p><b>问：怎么打印？</b><br>按 ⌘P 打印当前页。</p>
+<p><b>问：PDF 显示不够清晰？</b><br>在环境设置中调高「PDF 渲染质量」（如 3.0×），然后重新打开该 PDF。</p>
+<p><b>问：应用会上传我的数据吗？</b><br>不会。应用在本地运行，正式版不发起任何网络连接，不收集、不上传任何数据。详见<a href="index-zh.html">隐私政策</a>。</p>
+<p><b>问：缩放比例超过 200% 会有问题吗？</b><br>会弹出提示但仍会应用缩放，若影响阅读效果调回更小数值即可。</p>
+
+<h2>五、联系我们</h2>
+<p>遇到问题或有建议，欢迎发送邮件至：</p>
+<p class="email"><b><a href="mailto:dreamli81@foxmail.com">dreamli81@foxmail.com</a></b></p>
+<p>来信请尽量包含：macOS 版本、应用版本（应用菜单 → 关于）、出现问题的文件格式与复现步骤，必要时附截图。我们会在收到后尽快回复。</p>
+
+<footer>© 2026 李明旭 · 漫画阅读器 · <a href="index-zh.html">隐私政策</a> · <a href="support-en.html">English Support</a></footer>
+</body></html>
