@@ -1,11 +1,120 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Manga Reader – Support</title>
-<style>body{font-family:-apple-system,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:40px auto;padding:0 20px;color:#1d1d1f;line-height:1.7}h1{font-size:26px}section{margin:18px 0}footer{color:#86868b;font-size:13px;margin-top:30px}a{color:#0066cc}</style></head>
-<body><h1>Manga Reader – Support</h1>
-<section><h2>Contact</h2><p>Questions or feedback? Email <a href="mailto:dreamli81@foxmail.com">dreamli81@foxmail.com</a> (please include your macOS version and a description of the issue).</p></section>
-<section><h2>FAQ</h2>
-<p><b>Which formats are supported?</b> Image folders, password-free archives (zip/cbz, rar/cbr, lzh/cbl), and page-by-page PDF reading.</p>
-<p><b>How do I read files in a folder consecutively?</b> Open the folder and files continue in filename order. When opening a single file, macOS asks to authorize that folder the first time; afterwards continuation is automatic.</p>
-<p><b>How do I zoom or print?</b> Use trackpad pinch-to-zoom or the zoom menu; press ⌘P to print the current page.</p>
-<p><b>Does the app upload my data?</b> No. It runs locally, makes no network connections and collects no data. See the <a href="https://mingxu-li.github.io/manga-reader-privacy/index-en.html">Privacy Policy</a>.</p>
-</section>
-<footer>© 2026 李明旭</footer></body></html>
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Manga Reader – Support &amp; User Guide</title>
+<style>
+body{font-family:-apple-system,'Segoe UI',Roboto,sans-serif;max-width:820px;margin:40px auto;padding:0 20px;color:#1d1d1f;line-height:1.75;font-size:15px}
+h1{font-size:26px;margin-bottom:4px}h2{font-size:20px;margin:34px 0 10px;padding-bottom:6px;border-bottom:1px solid #e5e5ea}h3{font-size:16px;margin:22px 0 6px}
+p{margin:8px 0}ul,ol{margin:8px 0;padding-left:22px}li{margin:4px 0}
+code{font-family:'SF Mono',Menlo,monospace;font-size:13px;background:#f5f5f7;border-radius:4px;padding:1px 5px}
+footer{color:#86868b;font-size:13px;margin-top:44px;border-top:1px solid #e5e5ea;padding-top:12px}a{color:#0066cc;text-decoration:none}
+.sub{color:#86868b;font-size:13px;margin-top:0}.email{font-size:17px}
+</style></head>
+<body>
+<h1>Manga Reader – Support &amp; User Guide</h1>
+<p class="sub">Last updated: 2026-09-09 · See also <a href="index-en.html">Privacy Policy</a> · <a href="support-zh.html">中文技术支持</a></p>
+
+<h2>1. About the App (README)</h2>
+<p><b>Manga Reader</b> is a light, fast manga reader built for macOS, designed to keep you focused on reading. It runs entirely on your Mac: no network connections, no data collection.</p>
+<ul>
+<li><b>Formats</b>: image folders; zip / cbz, rar / cbr, lzh / cbl archives; PDF (page-by-page reading). Single image / PDF files can be opened directly too.</li>
+<li><b>Reading modes</b>: Japanese-style, Chinese-style and Waterfall modes for comfortable continuous reading, with auto-alignment after every step.</li>
+<li><b>Smart continuation</b>: images and PDFs in the same folder are read consecutively in filename order (folder access is requested once; see “Folder Access” below).</li>
+<li><b>Flexible zoom</b>: fit window / width / height, original size or a custom ratio; trackpad pinch and scroll-wheel zoom / scroll, direction configurable.</li>
+<li><b>Auto play &amp; loop</b>: page through automatically at a configurable interval, with optional looping.</li>
+<li><b>Utilities</b>: print the current page (⌘P), filters (grayscale / invert / crop / USM sharpen), recent items, and find &amp; batch rename for image folders.</li>
+<li><b>Languages</b>: 15 interface languages (简体中文 / English / 日本語 / 繁體中文 / 한국어 / Français / Deutsch / Español / Italiano / Português / Русский / Nederlands / Polski / Türkçe / Tiếng Việt), with “Follow System” for automatic switching.</li>
+<li><b>Privacy</b>: all reading data stays on your Mac; the release version makes no network connections. See the <a href="index-en.html">Privacy Policy</a>.</li>
+</ul>
+<p><b>Requirements</b>: macOS 13.0 or later (Apple silicon and Intel).</p>
+
+<h2>2. Getting Started</h2>
+<h3>Install &amp; launch</h3>
+<p>Download “Manga Reader” from the Mac App Store (the release version has no trial restrictions). The interface follows your system language and can be changed in Preferences.</p>
+<h3>Opening content</h3>
+<ul>
+<li>Press <code>⌘O</code> (File → Open Library…), then choose an image folder, an archive, or a single file;</li>
+<li>or drag a file / folder onto the window.</li>
+</ul>
+<h3>Folder access (important)</h3>
+<p>In App Store sandbox mode the app can only read what you explicitly open:</p>
+<ul>
+<li><b>Opening a whole folder</b>: access is granted by the Open panel; files are read in filename order with no further steps.</li>
+<li><b>Opening a single image / PDF</b>: if more files follow in the same directory, the app asks “Continue reading in the same folder?” — choose <b>“Choose Folder to Continue…”</b> and grant that folder in the system panel to read on automatically. The grant is remembered, so you won’t be asked again. Choose “Open Only This File” to open just that file.</li>
+</ul>
+<p>Granted folders can be reviewed or revoked anytime in <b>System Settings → Privacy &amp; Security → Files and Folders</b>.</p>
+
+<h2>3. Detailed Usage</h2>
+<h3>Supported formats &amp; limits</h3>
+<p>Image folders; bitmap images (JPEG, PNG, GIF, BMP, TIFF, JPEG 2000, WebP, HEIC and more); zip / cbz, rar / cbr, lzh / cbl archives; PDF (per page).</p>
+<p><b>Limits</b>: encrypted RAR and encrypted ZIP entries are not supported.</p>
+
+<h3>Turning pages &amp; browsing</h3>
+<ul>
+<li><b>Keyboard</b>: <code>← →</code>, <code>PgUp PgDn</code>, <code>Home End</code> and <code>Space</code> turn pages. The <code>Return</code> key follows your preference in Settings (follow the key layout / next page / step through the active reading mode). Page turns stop at the first or last page (no looping).</li>
+<li><b>Mouse (on the canvas)</b>: left click = next page; right click = previous page. With a reading mode active, left click steps through the mode (same as Return).</li>
+<li><b>Scroll wheel</b>: in Waterfall mode it scrolls the image vertically (smooth on trackpads; each wheel notch ≈ 8% of viewport height; press Return or click once after scrolling to the bottom to turn the page). In other modes it zooms globally (each notch ≈ 1.12×). Wheel direction can be set to follow the system or reversed.</li>
+</ul>
+
+<h3>Reading modes (the “Reading Mode” pop-up, or View → Reading Mode submenu)</h3>
+<ul>
+<li><b>Japanese</b>: right side first — a wide page shows its right half, then its left half, then turns the page;</li>
+<li><b>Chinese</b>: left side first — a wide page shows its left half, then its right half, then turns;</li>
+<li><b>Waterfall</b>: each step scrolls down ≈ 95% of the viewport; press Return / click again at the bottom to turn the page;</li>
+<li>Tall pages (longer than the window) scroll screen-by-screen in Japanese / Chinese mode at Waterfall’s pace; pages wider <i>and</i> taller than the window are read corner by corner;</li>
+<li>When a page is <b>fully visible</b>, Return / click turns directly to the next page;</li>
+<li><b>Step start point</b>: centered when the page fits; otherwise from the top for Waterfall / Chinese / no mode, and from the top-right for Japanese mode (independent of the manual zoom ratio).</li>
+</ul>
+
+<h3>Zoom</h3>
+<ul>
+<li>Buttons: Fit to Window / Fit to Height / Fit to Width / Original Size (key <code>4</code> = fit width);</li>
+<li>Zoom pop-up: By Width / By Height / Original Size / Custom Ratio. The first three are simple presets; “Custom Ratio” is a multiplier of original size (100 = 1:1, 150 = 1.5×) and is the only option with a percentage field — press Return or move focus away to apply it. Ratios above 200% show a warning but are still applied;</li>
+<li>Trackpad <b>pinch</b> zooms as well.</li>
+</ul>
+
+<h3>Auto play</h3>
+<p>View → <b>Play/Pause</b> starts or pauses automatic page turning; <b>Stop Playback</b> ends it; <b>Loop Mode</b> controls whether playback wraps. The page-turn interval is set in File → Preferences… → “Page-turn interval (ms)”.</p>
+
+<h3>Filters</h3>
+<p>The “Filter” pop-up offers None / Grayscale / Invert / Crop 5% / USM Sharpen. Press <code>F</code> to toggle between “None” and your last selected filter.</p>
+
+<h3>Printing</h3>
+<p><code>⌘P</code> (File → Print…) prints the <b>current page</b> through the system print panel.</p>
+
+<h3>Find &amp; batch rename</h3>
+<p>Edit → <b>Rename…</b> opens “Find &amp; Batch Rename”: regex find / replace on the filename stem of <b>folder books</b> (extensions are kept), with a match count preview before “Replace All”. Renaming applies only to folder page sources — not to archives. Items whose replacement would be empty or contain invalid characters are skipped.</p>
+
+<h3>Preferences (⌘,)</h3>
+<ul>
+<li><b>Interface Language</b>: follow the system, or pick one of the 15 languages listed above (applied immediately; if the system language has no pack, English is used);</li>
+<li><b>Performance</b>: expanded cache (pages), forward preload (pages), GC limit (MB);</li>
+<li><b>Page-turn interval (ms)</b>: the interval used by auto play;</li>
+<li><b>Return Key Action</b>: follow the key layout (default) / next page / step per reading mode when active;</li>
+<li><b>PDF Render Quality</b>: 1.0× (72 dpi) / 1.5× (108 dpi) / 2.0× (144 dpi, default) / 3.0× (216 dpi) — <b>does not affect already-opened documents</b>; reopen the PDF after changing it;</li>
+<li><b>Scroll Wheel Direction</b>: follow the system (default) / opposite to the system.</li>
+</ul>
+
+<h3>Other features</h3>
+<ul>
+<li><b>Open Recent</b>: File → Open Recent… (up to 5 items);</li>
+<li><b>Close</b>: <code>⌘W</code> or File → Close;</li>
+<li><b>Full Screen</b>: View → Toggle Full Screen, or the green window button;</li>
+<li><b>Menu bar icon</b>: View → Menu Bar Icon shows or hides a menu bar item;</li>
+<li><b>Help</b>: the Help menu includes “Copyright Info” and “Open-Source Licenses…” (full license texts of bundled open-source components); “About” lives in the app menu.</li>
+</ul>
+
+<h2>4. FAQ</h2>
+<p><b>Which formats are supported?</b><br>Image folders, individual image / PDF files, and password-free archives: zip / cbz, rar / cbr, lzh / cbl.</p>
+<p><b>How do I read the files of a folder consecutively?</b><br>Open the folder itself and files are read in filename order. When you open a single file, macOS asks to authorize that folder the first time (see “Folder access” above); afterwards continuation is automatic and no further prompts appear. A PDF plays through all of its own pages before the next file begins.</p>
+<p><b>How do I zoom?</b><br>Use the toolbar buttons or the zoom pop-up, pinch on the trackpad, or use the scroll wheel over the canvas (direction configurable in Preferences).</p>
+<p><b>How do I print?</b><br>Press ⌘P to print the current page.</p>
+<p><b>Is the PDF rendering blurry?</b><br>Raise “PDF Render Quality” in Preferences (e.g. 3.0×), then reopen the PDF.</p>
+<p><b>Does the app upload my data?</b><br>No. It runs locally, makes no network connections in the release version and collects nothing. See the <a href="index-en.html">Privacy Policy</a>.</p>
+<p><b>Is zooming above 200% a problem?</b><br>A warning appears but the zoom is still applied; lower the ratio if it affects readability.</p>
+
+<h2>5. Contact Us</h2>
+<p>Questions or feedback? Email us at:</p>
+<p class="email"><b><a href="mailto:dreamli81@foxmail.com">dreamli81@foxmail.com</a></b></p>
+<p>Please include your macOS version, the app version (About in the app menu), the file format involved and steps to reproduce, plus a screenshot if possible. We’ll get back to you as soon as we can.</p>
+
+<footer>© 2026 Mingxu Li · Manga Reader · <a href="index-en.html">Privacy Policy</a> · <a href="support-zh.html">中文技术支持</a></footer>
+</body></html>
