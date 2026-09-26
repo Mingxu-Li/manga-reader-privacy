@@ -13,6 +13,7 @@ This repository hosts the privacy policy and support pages for Manga Reader (a m
 | Privacy Policy (English) | <https://mingxu-li.github.io/manga-reader-privacy/index-en.html> |
 | 技术支持与使用说明（中文） | <https://mingxu-li.github.io/manga-reader-privacy/support-zh.html> |
 | Support & User Guide (English) | <https://mingxu-li.github.io/manga-reader-privacy/support-en.html> |
+| 支持页入口 / Support entry（15 语种语言选择） | <https://mingxu-li.github.io/manga-reader-privacy/support.html> |
 
 ## 关于应用 / About the app
 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support · 支持 — Manga Reader / 漫画阅读器</title>
+<meta name="description" content="Support and user guide for Manga Reader (macOS). Choose your language. / 漫画阅读器技术支持与使用说明，请选择语言。">
+<style>
+:root{--fg:#1d1d1f;--muted:#86868b;--line:#e5e5ea;--accent:#0066cc}
+*{box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans','Noto Sans',-apple-system,'Segoe UI',sans-serif;
+     max-width:820px;margin:64px auto;padding:0 20px;color:var(--fg);line-height:1.75}
+h1{font-size:28px;margin:0 0 4px;text-align:center}
+.sub{color:var(--muted);font-size:14px;text-align:center;margin:0 0 8px}
+.app{text-align:center;color:var(--muted);font-size:13px;margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:12px;margin:26px 0 30px}
+a.lang{border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--fg);display:block;transition:border-color .15s,box-shadow .15s}
+a.lang:hover{border-color:var(--accent);box-shadow:0 2px 10px rgba(0,0,0,.06)}
+a.lang b{font-size:16px;display:block;margin-bottom:2px}
+a.lang span{color:var(--muted);font-size:12.5px}
+a.lang.primary{border-color:#cfe3ff;background:#f7fbff}
+.note{border-top:1px solid var(--line);padding-top:16px;font-size:14px;color:#3a3a3c}
+.foot{margin-top:26px;font-size:13px;color:var(--muted);text-align:center}
+a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<h1 id="t">Support &amp; User Guide</h1>
+<p class="sub" id="s">Choose your language · 请选择语言</p>
+<p class="app">Manga Reader · 漫画阅读器 — macOS 13.0+</p>
+
+<div class="grid">
+  <a class="lang primary" href="support-zh.html"><b>简体中文</b><span>完整操作说明与常见问题</span></a>
+  <a class="lang primary" href="support-zh.html"><b>繁體中文</b><span>完整操作說明與常見問題</span></a>
+  <a class="lang primary" href="support-en.html"><b>English</b><span>Full user guide and FAQ</span></a>
+  <a class="lang" href="support-en.html"><b>日本語</b><span>英語のガイド</span></a>
+  <a class="lang" href="support-en.html"><b>한국어</b><span>영어 안내</span></a>
+  <a class="lang" href="support-en.html"><b>Deutsch</b><span>Englische Anleitung</span></a>
+  <a class="lang" href="support-en.html"><b>Español</b><span>Guía en inglés</span></a>
+  <a class="lang" href="support-en.html"><b>Français</b><span>Guide en anglais</span></a>
+  <a class="lang" href="support-en.html"><b>Italiano</b><span>Guida in inglese</span></a>
+  <a class="lang" href="support-en.html"><b>Nederlands</b><span>Engelse handleiding</span></a>
+  <a class="lang" href="support-en.html"><b>Polski</b><span>Instrukcja po angielsku</span></a>
+  <a class="lang" href="support-en.html"><b>Português</b><span>Guia em inglês</span></a>
+  <a class="lang" href="support-en.html"><b>Русский</b><span>Руководство на английском</span></a>
+  <a class="lang" href="support-en.html"><b>Türkçe</b><span>İngilizce kılavuz</span></a>
+  <a class="lang" href="support-en.html"><b>Tiếng Việt</b><span>Hướng dẫn tiếng Anh</span></a>
+</div>
+
+<p class="note" id="n">The full guide is currently available in Chinese and English; other language versions are on the way. All reading data stays on your Mac — the app never goes online and collects nothing. Email us anytime and we'll answer in English or Chinese.<br><span style="color:#86868b">完整的使用说明目前提供中文与英文版本，其他语言正在补充中。所有阅读数据仅保存在你的 Mac 上，应用不联网、不收集任何数据。</span></p>
+
+<p class="foot"><span id="c">Contact us</span>：<a href="mailto:dreamli81@foxmail.com">dreamli81@foxmail.com</a> · <a href="index.html">Privacy Policy · 隐私政策</a><br>© 2026 李明旭 / Mingxu Li</p>
+
+<script>
+// 页面文字随浏览器语言切换；无 JS 时上面已有英中对照，页面不会空白。
+var I18N = {
+  "zh-Hans":{t:"技术支持与使用说明",s:"请选择语言",c:"联系我们",
+    n:"完整的使用说明目前提供中文与英文版本，其他语言正在补充中。所有阅读数据仅保存在你的 Mac 上，应用不联网、不收集任何数据；有任何问题直接发邮件即可。"},
+  "zh-Hant":{t:"技術支援與使用說明",s:"請選擇語言",c:"聯絡我們",
+    n:"完整的使用說明目前提供中文與英文版本，其他語言正在補充中。所有閱讀資料僅保存在你的 Mac 上，應用程式不連網、不收集任何資料；有任何問題直接寄信即可。"},
+  "en":{t:"Support & User Guide",s:"Choose your language",c:"Contact us",
+    n:"The full guide is currently available in Chinese and English; other language versions are on the way. All reading data stays on your Mac — the app never goes online and collects nothing. Email us anytime."},
+  "ja":{t:"サポート・使い方",s:"言語を選択してください",c:"お問い合わせ",
+    n:"詳しい使い方は現在「中文」と「English」のみで、他の言語は準備中です。閲覧データは Mac 内だけに保存され、本アプリは通信も収集も行いません。ご質問はメールでお気軽にどうぞ。"},
+  "ko":{t:"지원 및 사용 안내",s:"언어를 선택하세요",c:"문의하기",
+    n:"자세한 사용 안내는 현재 중국어와 영어만 제공되며 다른 언어는 준비 중입니다. 모든 열람 데이터는 Mac에만 저장되고, 앱은 인터넷에 연결하거나 데이터를 수집하지 않습니다. 문의는 메일로 주세요."},
+  "de":{t:"Support & Anleitung",s:"Sprache wählen",c:"Kontakt",
+    n:"Die vollständige Anleitung gibt es derzeit auf Chinesisch und Englisch, weitere Sprachen folgen. Alle Lesedaten bleiben auf Ihrem Mac – die App geht nicht online und sammelt nichts. Schreiben Sie uns jederzeit."},
+  "es":{t:"Soporte y guía de uso",s:"Elige tu idioma",c:"Contacto",
+    n:"La guía completa está disponible por ahora en chino e inglés; el resto de idiomas está en camino. Todos los datos de lectura se quedan en tu Mac: la app no se conecta ni recopila nada. Escríbenos cuando quieras."},
+  "fr":{t:"Assistance et guide d'utilisation",s:"Choisissez votre langue",c:"Nous contacter",
+    n:"Le guide complet est disponible pour l'instant en chinois et en anglais ; les autres langues arrivent. Toutes les données de lecture restent sur votre Mac : l'app ne se connecte pas et ne collecte rien. Écrivez-nous à tout moment."},
+  "it":{t:"Supporto e guida all'uso",s:"Scegli la lingua",c:"Contatti",
+    n:"La guida completa è per ora in cinese e inglese; le altre lingue arriveranno. I dati di lettura restano sul tuo Mac: l'app non si connette e non raccoglie nulla. Scrivici quando vuoi."},
+  "nl":{t:"Ondersteuning en handleiding",s:"Kies je taal",c:"Contact",
+    n:"De volledige handleiding is er voorlopig in het Chinees en Engels; andere talen volgen. Alle leesgegevens blijven op je Mac – de app gaat niet online en verzamelt niets. Mail ons gerust."},
+  "pl":{t:"Wsparcie i instrukcja",s:"Wybierz język",c:"Kontakt",
+    n:"Pełna instrukcja jest na razie po chińsku i angielsku, kolejne języki w przygotowaniu. Wszystkie dane czytania zostają na Twoim Macu – aplikacja nie łączy się z siecią i niczego nie zbiera. Napisz do nas."},
+  "pt":{t:"Suporte e guia de uso",s:"Escolha o idioma",c:"Contato",
+    n:"O guia completo está por enquanto em chinês e inglês; outros idiomas estão a caminho. Todos os dados de leitura ficam no seu Mac — o app não se conecta e não coleta nada. Fale conosco quando quiser."},
+  "ru":{t:"Поддержка и руководство",s:"Выберите язык",c:"Связаться",
+    n:"Полное руководство пока на китайском и английском, остальные языки готовятся. Все данные чтения остаются на вашем Mac — приложение не выходит в сеть и ничего не собирает. Пишите нам в любое время."},
+  "tr":{t:"Destek ve kullanım kılavuzu",s:"Dilinizi seçin",c:"İletişim",
+    n:"Tam kılavuz şu an Çince ve İngilizce; diğer diller hazırlanıyor. Tüm okuma verileri Mac'inizde kalır — uygulama internete bağlanmaz ve hiçbir veri toplamaz. Bize her zaman yazabilirsiniz."},
+  "vi":{t:"Hỗ trợ và hướng dẫn sử dụng",s:"Chọn ngôn ngữ",c:"Liên hệ",
+    n:"Hướng dẫn đầy đủ hiện có tiếng Trung và tiếng Anh; các ngôn ngữ khác đang được bổ sung. Mọi dữ liệu đọc chỉ lưu trên Mac của bạn — ứng dụng không kết nối mạng và không thu thập gì. Hãy email cho chúng tôi."}
+};
+(function(){
+  var list = navigator.languages || [navigator.language || "en"];
+  var pick = null;
+  for (var i = 0; i < list.length && !pick; i++) {
+    var tag = String(list[i]);
+    var low = tag.toLowerCase();
+    if (low.indexOf("zh") === 0) { pick = (low.indexOf("hant") > -1 || low.indexOf("tw") > -1 || low.indexOf("hk") > -1 || low.indexOf("mo") > -1) ? "zh-Hant" : "zh-Hans"; }
+    else if (I18N[low.split("-")[0]]) { pick = low.split("-")[0]; }
+  }
+  pick = pick || "en";
+  var d = I18N[pick]; if (!d) return;
+  document.documentElement.lang = pick;
+  document.getElementById("t").textContent = d.t;
+  document.getElementById("s").textContent = d.s;
+  document.getElementById("n").textContent = d.n;
+  document.getElementById("c").textContent = d.c;
+  document.title = d.t + " — Manga Reader / 漫画阅读器";
+  // 高亮最匹配的语言卡片，并把 zh-Hant 用户指向繁体说明页（与简体同页）
+  var cards = document.querySelectorAll("a.lang");
+  var idx = {"zh-Hans":0,"zh-Hant":1,"en":2,"ja":3,"ko":4,"de":5,"es":6,"fr":7,"it":8,"nl":9,"pl":10,"pt":11,"ru":12,"tr":13,"vi":14}[pick];
+  if (cards[idx]) { cards[idx].style.borderColor = "#0066cc"; cards[idx].style.boxShadow = "0 2px 10px rgba(0,102,204,.15)"; }
+})();
+</script>
+</body>
+</html>
